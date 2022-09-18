@@ -1,0 +1,102 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: rgb(255, 255, 255);
+}
+
+h1, h2, h3, h4, h5, h6, p, button, input{
+    font-family: 'Courier New', Courier, monospace;   
+}
+
+button{
+    color: black;
+    border: 1px solid black;
+    border-radius: 6px;
+    min-width: 100px;
+    min-height: 40px;
+}
+button:hover{background-color: darkgray; color: white;}
+button:active{background-color: grey; color: white;}
+
+input{
+    color: black;
+    font-size: 20px;
+    border: 1px solid black;
+    border-radius: 6px;
+    min-width: 200px;
+    min-height: 40px;
+    max-width: 200px;
+}
+
+#main{
+    position: fixed;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#main .panel{
+    position: relative;
+    padding: 10px;
+    min-width: 310px;
+    background-color: rgb(207, 207, 207);
+    border: 2px solid black;
+    border-radius: 7px;
+    box-shadow: 0px 0px 15px -4px;
+}
+
+#main .buttons{
+    border-bottom-width: 0;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+#main .list{
+    min-height: 500px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+#main .list .todo{
+    background-color: rgb(255, 255, 255);
+    box-shadow: none;
+    min-width: 200px;
+    height: 450px;
+    margin: 2px;
+    overflow-y: scroll;
+}
+
+#main .list .todo #item{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 10px;
+    min-width: 150px;
+    min-height: 25px;
+    background-color: rgb(207, 207, 207);
+    border: 1px solid black;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px -4px;
+}
+
+#main .list .todo #item p{
+    background-color: white;
+    padding: 5px;
+    border-radius: 4px;
+    inline-size: 190px;
+    cursor: pointer;
+}
+
+#main .list .todo #item input{
+    margin-right: 10px;
+    min-width: 30px;
+    min-height: 30px;
+}
